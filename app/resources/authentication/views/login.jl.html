@@ -1,0 +1,61 @@
+<div class=h2>Welcome</div>
+<br>
+</div><div class="bs-callout bs-callout-primary"></div>
+  <div class=h1>
+    Please login here
+  </div>
+</div>
+<br>
+<div class=h1><span>$(output_flash())</span></div>
+<br>
+
+<div class=aa><div class=h3><form method="POST" action="$(linkto(:login))" class="" enctype="multipart/form-data">
+  <div class="form-group">
+    <label _for="auth_username">username </label>
+    <input type="text" id="auth_username" name="username" class="form-control" placeholder="User" />
+  </div>
+<br>
+  <div class="form-group">
+    <label _for="auth_password">password </label>
+    <input type="password" id="auth_password" name="password" class="form-control" placeholder="Password" />
+  </div>
+<br>
+  <input type="submit" value="login" class="btn btn-primary" />
+</form></div></div>
+
+<style type="text/css">
+ body {
+        margin-top: 10%;
+        font-family: "Microsoft YaHei", Georgia, 'Times New Roman', Times, serif;
+        background-color: white;
+        color:black;
+        font-size:16px;
+        }  
+  .h1 {
+    text-align:center;
+    vertical-align:text-top;
+  }
+
+.h2 {
+  text-align:center;
+  font-size:60px;
+  font-weight:bold;
+}
+.h3{
+  text-align:right;
+}
+
+.aa {
+  width:300px;
+  padding:30px;
+  padding-right:120px;
+  border:3px solid darkcyan;
+  margin:auto;
+  background-color:whitesmoke;
+}
+
+.aa:hover {
+  background-color:aliceblue;
+}
+
+</style>

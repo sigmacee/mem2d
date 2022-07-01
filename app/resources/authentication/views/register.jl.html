@@ -1,0 +1,60 @@
+<div class=h2>注册</div>
+<br>
+<div class=h1>
+  请输入注册信息
+  <span>$(output_flash())</span>
+</div>
+<br>
+<div class=aa><div class=h3><form method="POST" action="$(linkto(:register))" enctype="multipart/form-data">
+  <div class="form-group">
+    <label _for="auth_username">用户名 </label>
+    <input type="text" id="auth_username" name="username" class="form-control" placeholder="User" />
+  </div>
+<br>
+  <div class="form-group">
+    <label _for="auth_password">密码 </label>
+    <input type="password" id="auth_password" name="password" class="form-control" placeholder="Password" />
+  </div>
+<br>
+  <div class="form-group">
+    <label _for="auth_name">姓名 </label>
+    <input type="text" id="auth_name" name="name" class="form-control" placeholder="Name" />
+  </div>
+<br>
+  <div class="form-group">
+    <label _for="auth_email">邮箱 </label>
+    <input type="text" id="auth_email" name="email" class="form-control" placeholder="Email" />
+  </div>
+<br>
+  <input type="submit" value="注册" class="btn btn-primary" />
+</form></div></div>
+
+<style type="text/css">
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(36, 59, 85);
+    color: rgb(255,255,255);
+  }  
+  .h1 {
+    text-align:center;
+    color: rgb(255, 255, 255);
+    vertical-align:text-top;
+  }
+.h2 {
+  text-align:center;
+  font-size:60px;
+  font-weight:bold;
+}
+.h3{
+  text-align:right;
+}
+.aa {
+  width:300px;
+  padding:30px;
+  padding-right:120px;
+  border:3px solid #ffffff;
+  margin:auto;
+}
+
+</style>
